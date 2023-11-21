@@ -1,0 +1,6 @@
+2
+Sócrates 5
+Aristóteles 8
+Platão 4
+Tales 8
+Péricles 3

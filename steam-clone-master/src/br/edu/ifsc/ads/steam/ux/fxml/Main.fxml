@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsc.ads.steam.ux.controller.MainController">
+	<children>
+		<MenuBar fx:id="menuBar">
+			<menus>
+				<Menu text="%file">
+					<items>
+						<MenuItem text="%logout" />
+						<SeparatorMenuItem />
+						<MenuItem onAction="#exit" text="%exit" />
+					</items>
+				</Menu>
+				<Menu text="%user">
+					<items>
+						<MenuItem onAction="#openProfile" text="%profile" />
+						<MenuItem onAction="#openGames" text="%games" />
+						<MenuItem text="%friends" />
+					</items>
+				</Menu>
+				<Menu text="%about">
+					<items>
+						<MenuItem text="%help" />
+						<MenuItem text="%about" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+      <Label fx:id="lblGame" text="%game" />
+	</children>
+</VBox>
